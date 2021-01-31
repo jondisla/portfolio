@@ -1,0 +1,163 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  height: 60px;
+  color: #751af7;
+  font-size: 20px;
+}
+
+nav ul {
+  padding: 20px 40px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li img {
+  width: 200px;
+}
+
+#say-hello {
+  position: absolute;
+  right: 40px;
+  border: 2px solid #751af7;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.welcome {
+  display: -ms-grid;
+  display: grid;
+  padding: 150px 0 0;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  grid-gap: 40px;
+}
+
+.welcome h2 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.welcome #sub-head {
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.welcome #profile-image {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  margin: 0 auto;
+}
+
+.welcome #profile-image img {
+  width: 400px;
+}
+
+#about {
+  color: white;
+  background: #751af7;
+  height: 500px;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  padding: 80px 40px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+#about #wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#about h3 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+#about p {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 2;
+}
+
+#skills {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#skills #skills-wrapper {
+  border-radius: 20px;
+  margin-top: -150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: white;
+  padding: 80px 20px;
+  text-align: center;
+  grid-gap: 40px;
+  -webkit-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+  box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+}
+
+#skills #skills-wrapper #a {
+  border-right: 1px solid #c7c7c7;
+}
+
+#skills #skills-wrapper .skills-logo {
+  font-size: 40px;
+  padding: 0 0 30px;
+}
+
+#skills #skills-wrapper .head {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#skills #skills-wrapper .sub-head {
+  color: #751af7;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#skills #skills-wrapper .sub-content {
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 40px 0;
+  font-size: 18px;
+}
+
+#projects {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+#projects #projects-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#projects h3 {
+  font-size: 40px;
+  padding: 0 0 100px;
+  text-align: center;
+}
+
+#projects .project-box img {
+  border-radius: 20px;
+  width: 100%;
+  -webkit-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+  box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+}
+/*# sourceMappingURL=style.css.map */

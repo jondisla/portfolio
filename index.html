@@ -23,15 +23,11 @@
     <!-- Contact form -->
     <div id="contact-form" class="hidden">
         <div class="head">Say Hello<span id = close><i class="fa fa-times" aria-hidden="true"></i></i></span></div>
-        <form id = "form-body" action="sendform.php" method="post" enctype="text/plain">
-            Name:<br>
-            <input type="text" name="name" required><br>
-            E-mail:<br>
-            <input type="text" name="mail" required><br>
-            Comment:<br>
-            <textarea name="message" required></textarea><br><br>
-            <input type="submit" class="form-btn" value="Send">
-            <input type="reset" class="form-btn" value="Reset">
+        <form id = "form-body" action="https://formspree.io/f/xvovydjj" method="POST">
+            <input type="text" name="name" placeholder="Name"></br></br>
+            <input type="email" name="_replyto" placeholder="Email"></br></br>
+            <textarea name="message" placeholder="Comment"></textarea></br></br>
+            <input class = "form-btn" type="submit" value="Send">
         </form>
     </div>
     <div id="container-filter">
@@ -201,10 +197,8 @@
                         <li><a href="https://www.youtube.com/channel/UCqzOHeZgXI4nYZEKUdTfObg"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                <div id="contact">
-                    Contact
-                </div>
             </div>
+            <div id="copy">Copyright &copy 2021 Jonathan Disla</div>
         </div>
         <!-- End footer -->
 

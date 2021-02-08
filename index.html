@@ -20,182 +20,196 @@
     <title>Jon Disla</title>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><img src="assets/img/logoB.png" alt=""></li>
-            <li id="say-hello">Say Hello</li>
-        </ul>
-    </nav>
-    <!-- End navigation -->
-
-    <div class="container">
-
-    <!-- Welcome -->
-    <div class="welcome">
-        <h2>Designer, Front-end Developer</h2>
-        <p id="sub-head">I bring templates to life and I love what I do.</p>
-        <div id="profile-image"><img src="assets/img/meCartoon.png" alt=""></div>
+    <!-- Contact form -->
+    <div id="contact-form" class="hidden">
+        <div class="head">Say Hello<span id = close><i class="fa fa-times" aria-hidden="true"></i></i></span></div>
+        <form id = "form-body" action="sendform.php" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name" required><br>
+            E-mail:<br>
+            <input type="text" name="mail" required><br>
+            Comment:<br>
+            <textarea name="message" required></textarea><br><br>
+            <input type="submit" class="form-btn" value="Send">
+            <input type="reset" class="form-btn" value="Reset">
+        </form>
     </div>
-    <!-- End Welcome -->
-
-    <!-- About -->
-    <div id="about">
-        <div id="wrapper">
-            <h3>Hello world, I'm John. Here is a little about me.</h3>
-            <p>I love to make web applications especially in the front end.  Seeing an application come to life is exciting and fulfilling.  Always giving the best effort in troubleshooting and finding answers to difficult problems.  I am always willing to go the extra mile for a project or a customer to provide the best solution possible.  I have two years of development experience in small business and freelancing.  I hope you enjoy your stay and please check out my portfolio!</p>
-        </div>
-    </div>
-    <!-- End about -->
-
-    <!-- skills -->
-    <div id="skills">
-        <div id="skills-wrapper">
-            <ul id="a">
-                <div class="skills-logo">
-                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                </div>
-                <li class="head">
-                    Design
-                </li>
-                <li class="sub-content">
-                    Putting pencil to paper and figuring out a design that translate into clean code using the best practices.
-                </li>
-                <li class="sub-head">
-                    Experience designing
-                </li>
-                <li class="sub-content">
-                    Logos, UI/UX, copy writing
-                <li class="sub-head">
-                    Tools
-                </li>
-                <li class="sub-content">
-                    <ul>
-                        <li>Pen & Paper</li>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>Affinity Designer</li>
-                        <li>Sketch</li>
-                    </ul>
-                </li>
+    <div id="container-filter">
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><img src="assets/img/logoB.png" alt=""></li>
+                <li id="say-hello">Say Hello</li>
             </ul>
-            <ul id="b">
-                <div class="skills-logo">
-                    <i class="fa fa-code" aria-hidden="true"></i>
-                </div>
-                <li class="head">
-                    Front-end
-                </li>
-                <li class="sub-content">
-                    Adapting to technologies necessary to complete a project and creating dynamic content for the web.
-                </li>
-                <li class="sub-head">
-                    Experience programming
-                </li>
-                <li class="sub-content">
-                    HTML, CSS(Sass), Javascript, PHP
-                <li class="sub-head">
-                    Tools
-                </li>
-                <li class="sub-content">
-                    <ul>
-                        <li>Google Developer Tools</li>
-                        <li>Github</li>
-                        <li>Visual Studio</li>
-                        <li>Terminal</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- End skills -->
+        </nav>
+        <!-- End navigation -->
 
-    <!-- projects -->
-    <div id="projects">
-        <h3>Projects</h3>
-        <div id="projects-wrapper">
-            <div class="project-box">
-                <div id="project-1">
-                    <a href="https://jondisla.github.io/bioSite/">
-                    <div id="p1Description">
-                        <h2>Bio Site Project</h2>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-box">
-                <div id="project-2">
-                    <a href="https://github.com/jondisla/portfolio/blob/main/assets/img/bioSite.pdf">
-                    <div id="p2Description">
-                        <h2>Bio Site Prototype</h2>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-box">
-                <div id="project-3">
-                    <div id="p3Description">
-                        <a href="https://github.com/jondisla/web-230">
-                        <h2>Web 230 Repo</h2>
-                        </a>
-                        <a href="https://github.com/jondisla/web-231">
-                        <h2>Web 231 Repo</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-box">
-                <div id="project-4">
-                    <a href="https://github.com/jondisla/portfolio/blob/main/assets/img/portfolio-proto.png">
-                    <div id="p4Description">
-                        <h2>Portfolio Prototype</h2>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-box">
-                <div id="project-5">
-                    <a href="https://github.com/jondisla/web-330">
-                    <div id="p5Description">
-                        <h2>Web 330 Repo</h2>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-box">
-                <div id="project-6">
-                    <a href="https://johndisla.com/fancyres/">
-                    <div id="p6Description">
-                        <h2>Restaurant Site</h2>
-                    </div>
-                    </a>
-                </div>
+        <div class="container">
+
+        <!-- Welcome -->
+        <div class="welcome">
+            <h2>Designer, Front-end Developer</h2>
+            <p id="sub-head">I bring templates to life and I love what I do.</p>
+            <div id="profile-image"><img src="assets/img/meCartoon.png" alt=""></div>
+        </div>
+        <!-- End Welcome -->
+
+        <!-- About -->
+        <div id="about">
+            <div id="wrapper">
+                <h3>Hello world, I'm John. Here is a little about me.</h3>
+                <p>I love to make web applications especially in the front end.  Seeing an application come to life is exciting and fulfilling.  Always giving the best effort in troubleshooting and finding answers to difficult problems.  I am always willing to go the extra mile for a project or a customer to provide the best solution possible.  I have two years of development experience in small business and freelancing.  I hope you enjoy your stay and please check out my portfolio!</p>
             </div>
         </div>
-    </div>
-    <!-- End projects -->
+        <!-- End about -->
 
-    <!-- footer -->
-    <div id="footer">
-        <div id="footer-wrapper">
-            <div id="social">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/jonathan-dis/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="https://stackoverflow.com/users/8924671/jonathan-disla"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCqzOHeZgXI4nYZEKUdTfObg"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        <!-- skills -->
+        <div id="skills">
+            <div id="skills-wrapper">
+                <ul id="a">
+                    <div class="skills-logo">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                    </div>
+                    <li class="head">
+                        Design
+                    </li>
+                    <li class="sub-content">
+                        Putting pencil to paper and figuring out a design that translate into clean code using the best practices.
+                    </li>
+                    <li class="sub-head">
+                        Experience designing
+                    </li>
+                    <li class="sub-content">
+                        Logos, UI/UX, copy writing
+                    <li class="sub-head">
+                        Tools
+                    </li>
+                    <li class="sub-content">
+                        <ul>
+                            <li>Pen & Paper</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Affinity Designer</li>
+                            <li>Sketch</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="b">
+                    <div class="skills-logo">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                    </div>
+                    <li class="head">
+                        Front-end
+                    </li>
+                    <li class="sub-content">
+                        Adapting to technologies necessary to complete a project and creating dynamic content for the web.
+                    </li>
+                    <li class="sub-head">
+                        Experience programming
+                    </li>
+                    <li class="sub-content">
+                        HTML, CSS(Sass), Javascript, PHP
+                    <li class="sub-head">
+                        Tools
+                    </li>
+                    <li class="sub-content">
+                        <ul>
+                            <li>Google Developer Tools</li>
+                            <li>Github</li>
+                            <li>Visual Studio</li>
+                            <li>Terminal</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <div id="contact">
-                Contact
+        </div>
+        <!-- End skills -->
+
+        <!-- projects -->
+        <div id="projects">
+            <h3>Projects</h3>
+            <div id="projects-wrapper">
+                <div class="project-box">
+                    <div id="project-1">
+                        <a href="https://jondisla.github.io/bioSite/">
+                        <div id="p1Description">
+                            <h2>Bio Site Project</h2>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div id="project-2">
+                        <a href="https://github.com/jondisla/portfolio/blob/main/assets/img/bioSite.pdf">
+                        <div id="p2Description">
+                            <h2>Bio Site Prototype</h2>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div id="project-3">
+                        <div id="p3Description">
+                            <a href="https://github.com/jondisla/web-230">
+                            <h2>Web 230 Repo</h2>
+                            </a>
+                            <a href="https://github.com/jondisla/web-231">
+                            <h2>Web 231 Repo</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div id="project-4">
+                        <a href="https://github.com/jondisla/portfolio/blob/main/assets/img/portfolio-proto.png">
+                        <div id="p4Description">
+                            <h2>Portfolio Prototype</h2>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div id="project-5">
+                        <a href="https://github.com/jondisla/web-330">
+                        <div id="p5Description">
+                            <h2>Web 330 Repo</h2>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div id="project-6">
+                        <a href="https://johndisla.com/fancyres/">
+                        <div id="p6Description">
+                            <h2>Restaurant Site</h2>
+                        </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- End footer -->
+        <!-- End projects -->
 
-    </div>
+        <!-- footer -->
+        <div id="footer">
+            <div id="footer-wrapper">
+                <div id="social">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/jonathan-dis/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://stackoverflow.com/users/8924671/jonathan-disla"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCqzOHeZgXI4nYZEKUdTfObg"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    Contact
+                </div>
+            </div>
+        </div>
+        <!-- End footer -->
 
+        </div>
+    </div>
     <!-- JS -->
     <script src="assets/app.js"></script>
 </body>

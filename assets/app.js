@@ -19,4 +19,15 @@ $(document).ready(()=>{
         $('#p6Description').fadeToggle( "slow", "linear" );
     })
 
+
+    $('#say-hello').click(()=>{
+        $('#container-filter').css("filter", "blur(2px)", "z-index", "-1")
+        $('#contact-form').removeClass('hidden');
+    })
+
+    $('#close, .container').click(()=>{
+        $('#container-filter').css("filter", "blur(0px)", "z-index", "1");
+        $('#contact-form').addClass('hidden');
+    })
+
 })

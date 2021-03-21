@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Jon Disla</title>
+</head>
+<body>
+    <!-- Contact form -->
+    <div id="contact-form" class="hidden">
+        <div class="head">Say Hello<span id = close><i class="fa fa-times" aria-hidden="true"></i></i></span></div>
+        <form id = "form-body" action="https://formspree.io/f/xvovydjj" method="POST">
+            <input type="text" name="name" placeholder="Name"></br></br>
+            <input type="email" name="_replyto" placeholder="Email"></br></br>
+            <textarea name="message" placeholder="Comment"></textarea></br></br>
+            <input class = "form-btn" type="submit" value="Send">
+        </form>
+    </div>
+   
+    <div class="pres-container">
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="/"><img src="assets/img/logoB.png" alt=""></a></li>
+                <span id="say-hello">
+                    <span id="menu">
+                        <li>Presentations</li>
+                    </span>
+                    <li id="sayHi">Say Hello</li>
+                </span>
+            </ul>
+        </nav>
+        <!-- End navigation -->
+
+        <div class="container">
+
+        <!-- Welcome -->
+        <div class="welcome" style="text-align: center;">
+            <h2>Presentations</h2>
+            <p id="sub-head">Web development topics explained</p>
+            <a id="goBack" href="/"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
+            <br>
+        </div>
+        <!-- End Welcome -->
+
+        <!-- Presentations -->
+        <div id="projects">
+            
+            <div id="projects-wrapper">
+                <div class="project-box">
+                    <div id="rest-pres">
+                        <div id="rest-description">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End presentations -->
+        
+        <!-- footer -->
+        <div id="footer">
+            <div id="footer-wrapper">
+                <div id="social">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/jonathan-dis/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://stackoverflow.com/users/8924671/jonathan-disla"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCqzOHeZgXI4nYZEKUdTfObg"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="copy">Copyright &copy 2021 Jonathan Disla</div>
+        </div>
+        <!-- End footer -->
+
+        </div>
+    </div>
+    <div class="video-pres">
+        <i class="fa fa-times close-vid" aria-hidden="true"></i>
+        <br>
+        <video controls reload="none" style="width:1000px;">
+        <source src="/web-420/REST 1.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <!-- JS -->
+    <script src="assets/app.js"></script>
+</body>
+</html>

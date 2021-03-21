@@ -1,20 +1,33 @@
+/** @format */
+
 $font: #751af7;
 body {
   font-family: "Roboto", sans-serif;
 }
 nav {
-  height: 60px;
+  height: 90px;
   color: $font;
   font-size: 20px;
+  position: fixed;
+  width: 100%;
+
   ul {
     padding: 20px 40px;
   }
   li {
     display: inline-block;
+
     img {
       width: 200px;
     }
   }
+}
+#menu {
+  margin: 0 -180px;
+  position: absolute;
+}
+.navBg {
+  background-color: rgb(233, 233, 233);
 }
 
 #say-hello {
@@ -23,10 +36,16 @@ nav {
   border: 2px solid $font;
   border-radius: 20px;
   padding: 10px;
-  &:hover {
-    cursor: pointer;
-    border: 2px solid #fa4273;
-    color: #fa4273;
+  a {
+    text-decoration: none;
+    color: $font;
+  }
+  a,
+  li {
+    &:hover {
+      cursor: pointer;
+      color: #fa4273;
+    }
   }
 }
 
@@ -357,5 +376,57 @@ nav {
   #copy {
     color: white;
     text-align: center;
+  }
+}
+
+#goBack {
+  border: 3px solid $font;
+  width: 10%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: $font;
+  &:hover {
+    cursor: pointer;
+    color: #fa4273;
+    border: 3px solid #fa4273;
+  }
+}
+
+#rest-pres {
+  background: url("img/rest-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+#rest-description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.728);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  h2 {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  i {
+    font-size: 60px;
+    margin-top: 30%;
+  }
+}
+
+.video-pres {
+  visibility: hidden;
+  position: absolute;
+  top: 23%;
+  left: 23%;
+  .close-vid {
+    font-size: 40px;
   }
 }

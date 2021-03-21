@@ -1,11 +1,14 @@
+/** @format */
 body {
   font-family: "Roboto", sans-serif;
 }
 
 nav {
-  height: 60px;
+  height: 90px;
   color: #751af7;
   font-size: 20px;
+  position: fixed;
+  width: 100%;
 }
 
 nav ul {
@@ -20,6 +23,15 @@ nav li img {
   width: 200px;
 }
 
+#menu {
+  margin: 0 -180px;
+  position: absolute;
+}
+
+.navBg {
+  background-color: #e9e9e9;
+}
+
 #say-hello {
   position: absolute;
   right: 40px;
@@ -28,9 +40,14 @@ nav li img {
   padding: 10px;
 }
 
-#say-hello:hover {
+#say-hello a {
+  text-decoration: none;
+  color: #751af7;
+}
+
+#say-hello a:hover,
+#say-hello li:hover {
   cursor: pointer;
-  border: 2px solid #fa4273;
   color: #fa4273;
 }
 
@@ -420,5 +437,62 @@ nav li img {
 #footer #copy {
   color: white;
   text-align: center;
+}
+
+#goBack {
+  border: 3px solid #751af7;
+  width: 10%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #751af7;
+}
+
+#goBack:hover {
+  cursor: pointer;
+  color: #fa4273;
+  border: 3px solid #fa4273;
+}
+
+#rest-pres {
+  background: url("img/rest-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+#rest-description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.728);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#rest-description h2 {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#rest-description i {
+  font-size: 60px;
+  margin-top: 30%;
+}
+
+.video-pres {
+  visibility: hidden;
+  position: absolute;
+  top: 23%;
+  left: 23%;
+}
+
+.video-pres .close-vid {
+  font-size: 40px;
 }
 /*# sourceMappingURL=style.css.map */

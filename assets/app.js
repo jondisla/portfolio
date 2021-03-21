@@ -1,13 +1,6 @@
 /** @format */
 
 $(document).ready(() => {
-  //Stop video used in close video element
-  const video = document.querySelector("video");
-  function stopVideo() {
-    video.pause();
-    video.currentTime = 0;
-  }
-
   //Project hovers
   $("#project-1").hover(() => {
     $("#p1Description").fadeToggle("slow", "linear");
@@ -51,7 +44,8 @@ $(document).ready(() => {
     if ($(".video-pres").css("visibility") === "visible") {
       $(".pres-container").css("filter", "blur(0px)", "z-index", "1");
       $(".video-pres").css("visibility", "hidden");
-      stopVideo();
+      //Stop youtube video
+      $("iframe").attr("src", $("iframe").attr("src"));
     }
   });
 

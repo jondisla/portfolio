@@ -529,6 +529,32 @@ nav li img {
   margin-top: 30%;
 }
 
+#diagram-description:hover {
+  cursor: pointer;
+}
+
+#nosql1 {
+  position: absolute;
+  top: 20%;
+  display: none;
+  left: 37%;
+}
+
+#nosql1 h2 {
+  color: white;
+  font-size: 24px;
+  padding: 0 0 20px 0;
+}
+
+#nosql1 #nosql1Close {
+  font-size: 30px;
+  color: white;
+}
+
+#nosql1 #nosql1Close:hover {
+  cursor: pointer;
+}
+
 .darken {
   width: 100%;
   background: rgba(0, 0, 0, 0.741);

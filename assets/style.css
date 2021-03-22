@@ -528,4 +528,9 @@ nav li img {
   font-size: 60px;
   margin-top: 30%;
 }
+
+.darken {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.741);
+}
 /*# sourceMappingURL=style.css.map */

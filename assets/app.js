@@ -41,13 +41,18 @@ $(document).ready(() => {
   });
   //Video play Button
   $("#rest-description").click(() => {
-    $(".pres-container").css("filter", "blur(2px)", "z-index", "-1");
+    $(".pres-container").css({
+      filter: "blur(2px)",
+      "z-index": "-1",
+    });
+    $(".pres-container").addClass("darken");
     $(".video-pres").css("visibility", "visible");
   });
 
   $(".close-vid").click(() => {
     if ($(".video-pres").css("visibility") === "visible") {
       $(".pres-container").css("filter", "blur(0px)", "z-index", "1");
+      $(".pres-container").removeClass("darken");
       $(".video-pres").css("visibility", "hidden");
       //Stop youtube video
       $("iframe").attr("src", $("iframe").attr("src"));

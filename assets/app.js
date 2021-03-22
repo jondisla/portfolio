@@ -24,8 +24,13 @@ $(document).ready(() => {
     $("#p6Description").fadeToggle("slow", "linear");
   });
 
+  //diagram hovers
+  $("#nosql1diagram").hover(() => {
+    $("#diagram-description").fadeToggle("slow", "linear");
+  });
+
   //Contact form & Button
-  $("#sayHi").click(() => {
+  $(".sayHi").click(() => {
     $(".container-filter").css("filter", "blur(2px)", "z-index", "-1");
     $("#contact-form").removeClass("hidden");
   });

@@ -64,7 +64,17 @@
             <div id="projects-wrapper">
                 <div class="project-box">
                     <div id="nosql1diagram">
-                        <div id="diagram-description"><h2><i class="fa fa-window-maximize" aria-hidden="true"></i><br>View</h2></div>
+                        <div class="diagram1-description"><h2><i class="fa fa-window-maximize" aria-hidden="true"></i><br>View</h2></div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div id="nosql2diagram">
+                        <div class="diagram2-description"><h2><i class="fa fa-window-maximize" aria-hidden="true"></i><br>View</h2></div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div id="nosql3diagram">
+                        <div class="diagram3-description"><h2><i class="fa fa-window-maximize" aria-hidden="true"></i><br>View</h2></div>
                     </div>
                 </div>
             </div>
@@ -88,11 +98,45 @@
 
         </div>
     </div>
-    <div id="nosql1">
+
+    <!-- MODALS -->
+    <div class="nosql1">
         <h2>NoSQL Relationship Data Structure</h2>
         <img src="../nosql-data-diagrams/nosql-data-structure.png" alt="">
         <br>
-        <center><i id="nosql1Close" class="fa fa-times" aria-hidden="true"></i></center>
+        <center><i class="nosql1Close" class="fa fa-times" aria-hidden="true">X</i></center>
+    </div>
+    <div class="nosql2">
+        <h2>NoSQL Store Data Structure</h2>
+        <div class="modal-wrapper">
+            <img src="../nosql-data-diagrams/NoSQL-2.2.png" alt="">
+            <div class="description">
+                <ul>
+                    <li class="title">Business Rules</li>
+                    <li>1. CUSTOMER can have many INVOICES</li>
+                    <li>2. many INVOICEs can be assigned to one CUSTOMER</li>
+                    <li>3. an INVOICE can have many LINE_ITEMs</li>
+                    <li>4. many LINE_ITEMs can be associated with one INVOICE</li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <center><i class="nosql2Close" class="fa fa-times" aria-hidden="true">X</i></center>
+    </div>
+    <div class="nosql3">
+        <h2>NoSQL Store Data Structure</h2>
+        <div class="modal-wrapper">
+            <img src="../nosql-data-diagrams/NoSQL2.3.png" alt="">
+            <div class="description">
+                <ul>
+                    <li class="title">Business Rules</li>
+                    <li>1. a CLASS may ENROLL many students</li>
+                    <li>2. esch STUDENT may ENROLL in many CLASSES</li>
+                </ul>
+            </div>
+            <br>
+        </div>
+            <center><i class="nosql3Close" class="fa fa-times" aria-hidden="true">X</i></center>
     </div>
     <!-- JS -->
     <script src="../assets/app.js"></script>

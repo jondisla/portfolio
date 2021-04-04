@@ -502,7 +502,7 @@ nav li img {
 
 #nosql1diagram {
   background: url("../nosql-data-diagrams/nosql-data-structure.png");
-  background-size: covers;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
   text-align: center;
@@ -510,7 +510,7 @@ nav li img {
   border-radius: 20px;
 }
 
-#diagram-description {
+.diagram1-description {
   display: none;
   width: 100%;
   height: 100%;
@@ -520,39 +520,172 @@ nav li img {
   border-radius: 20px;
 }
 
-#diagram-description h2 {
+.diagram1-description h2 {
   font-size: 30px;
 }
 
-#diagram-description i {
+.diagram1-description i {
   font-size: 60px;
   margin-top: 30%;
 }
 
-#diagram-description:hover {
+.diagram1-description:hover {
   cursor: pointer;
 }
 
-#nosql1 {
+.nosql1 {
   position: absolute;
   top: 20%;
   display: none;
   left: 37%;
 }
 
-#nosql1 h2 {
+.nosql1 h2 {
   color: white;
   font-size: 24px;
   padding: 0 0 20px 0;
 }
 
-#nosql1 #nosql1Close {
+.nosql1 .nosql1Close {
   font-size: 30px;
   color: white;
 }
 
-#nosql1 #nosql1Close:hover {
+.nosql1 .nosql1Close:hover {
   cursor: pointer;
+}
+
+#nosql2diagram {
+  background: url("../nosql-data-diagrams/NoSQL-2.2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.diagram2-description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.728);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.diagram2-description h2 {
+  font-size: 30px;
+}
+
+.diagram2-description i {
+  font-size: 60px;
+  margin-top: 30%;
+}
+
+.diagram2-description:hover {
+  cursor: pointer;
+}
+
+.nosql2 {
+  position: absolute;
+  top: 20%;
+  display: none;
+  left: 20%;
+}
+
+.nosql2 h2 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 0 0 20px 0;
+}
+
+.nosql2 .nosql2Close {
+  font-size: 30px;
+  color: white;
+}
+
+.nosql2 .nosql2Close:hover {
+  cursor: pointer;
+}
+
+#nosql3diagram {
+  background: url("../nosql-data-diagrams/NoSQL2.3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.diagram3-description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.728);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.diagram3-description h2 {
+  font-size: 30px;
+}
+
+.diagram3-description i {
+  font-size: 60px;
+  margin-top: 30%;
+}
+
+.diagram3-description:hover {
+  cursor: pointer;
+}
+
+.nosql3 {
+  position: absolute;
+  top: 20%;
+  display: none;
+  left: 30%;
+}
+
+.nosql3 h2 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 0 0 20px 0;
+}
+
+.nosql3 .nosql3Close {
+  font-size: 30px;
+  color: white;
+}
+
+.nosql3 .nosql3Close:hover {
+  cursor: pointer;
+}
+
+.modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  border-radius: 10px;
+}
+
+.modal-wrapper .description {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 20px;
+  line-height: 3;
+}
+
+.modal-wrapper .description .title {
+  text-align: center;
+  font-size: 40px;
 }
 
 .darken {

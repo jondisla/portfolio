@@ -107,16 +107,46 @@ $(document).ready(() => {
     });
     $(".pres-container").addClass("darken");
   });
+  //////////////////////DIAGRAMS4//////////////////////////
+  $("#nosql4diagram").hover(() => {
+    $(".diagram4-description").fadeToggle("slow", "linear");
+  });
+
+  $("#nosql4diagram").click(() => {
+    $(".nosql4").css("display", "block");
+    $(".pres-container").css({
+      filter: "blur(2px)",
+      "z-index": "-1",
+    });
+    $(".pres-container").addClass("darken");
+  });
+  //////////////////////DIAGRAMS5//////////////////////////
+  $("#nosql5diagram").hover(() => {
+    $(".diagram5-description").fadeToggle("slow", "linear");
+  });
+
+  $("#nosql5diagram").click(() => {
+    $(".nosql5").css("display", "block");
+    $(".pres-container").css({
+      filter: "blur(2px)",
+      "z-index": "-1",
+    });
+    $(".pres-container").addClass("darken");
+  });
 
   //Close X
-  $(".nosql1Close, .nosql2Close, .nosql3Close").click(() => {
+  $(
+    ".nosql1Close, .nosql2Close, .nosql3Close, .nosql4Close, .nosql5Close"
+  ).click(() => {
     console.log("hey");
     if (
       $(".nosql1").css("display") === "block" ||
       $(".nosql2").css("display") === "block" ||
-      $(".nosql3").css("display") === "block"
+      $(".nosql3").css("display") === "block" ||
+      $(".nosql4").css("display") === "block" ||
+      $(".nosql5").css("display") === "block"
     ) {
-      $(".nosql1, .nosql2, .nosql3").css("display", "none");
+      $(".nosql1, .nosql2, .nosql3, .nosql4, .nosql5").css("display", "none");
       $(".pres-container").css({
         filter: "blur()",
         "z-index": "-1",

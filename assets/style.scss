@@ -579,6 +579,104 @@ nav {
   }
 }
 
+#nosql4diagram {
+  background: url("../nosql-data-diagrams/NoSQL3.2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.diagram4-description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.728);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  h2 {
+    font-size: 30px;
+  }
+  i {
+    font-size: 60px;
+    margin-top: 30%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nosql4 {
+  position: absolute;
+  top: 20%;
+  display: none;
+  left: 13%;
+  h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 0 0 20px 0;
+  }
+  .nosql4Close {
+    font-size: 30px;
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#nosql5diagram {
+  background: url("../nosql-data-diagrams/NoSQL3.3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.diagram5-description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.728);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  h2 {
+    font-size: 30px;
+  }
+  i {
+    font-size: 60px;
+    margin-top: 30%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nosql5 {
+  position: absolute;
+  top: 20%;
+  display: none;
+  left: 30%;
+  h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 0 0 20px 0;
+  }
+  .nosql5Close {
+    font-size: 30px;
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 .modal-wrapper {
   display: flex;
   background: white;

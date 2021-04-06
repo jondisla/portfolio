@@ -77,7 +77,7 @@ $(document).ready(() => {
       "z-index": "-1",
     });
     $(".pres-container").addClass("darken");
-    $(".video-pres-restful").css("visibility", "visible");
+    $(".video-pres-soap").css("visibility", "visible");
   });
 
   $(".close-vid").click(() => {
@@ -86,10 +86,9 @@ $(document).ready(() => {
       $(".video-pres-soap").css("visibility") === "visible" ||
       $(".video-pres-restful").css("visibility") === "visible"
     ) {
-      console.log("hey");
       $(".pres-container").css("filter", "blur(0px)", "z-index", "1");
       $(".pres-container").removeClass("darken");
-      $(".video-pres, .video-pres-restful").css("visibility", "hidden");
+      $(".video-pres, .video-pres-restful, .video-pres-soap").css("visibility", "hidden");
       //Stop youtube video
       $("iframe").attr("src", $("iframe").attr("src"));
     }

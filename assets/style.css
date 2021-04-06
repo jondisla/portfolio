@@ -545,14 +545,14 @@ nav li img {
   margin-top: 30%;
 }
 
-.video-pres, .video-pres-restful {
+.video-pres, .video-pres-restful, .video-pres-soap {
   visibility: hidden;
   position: absolute;
   top: 23%;
   left: 23%;
 }
 
-.video-pres .close-vid, .video-pres-restful .close-vid {
+.video-pres .close-vid, .video-pres-restful .close-vid, .video-pres-soap .close-vid {
   font-size: 40px;
 }
 

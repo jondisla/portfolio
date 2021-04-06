@@ -29,9 +29,6 @@ $(document).ready(() => {
   $("#project-2").hover(() => {
     $("#p2Description").fadeToggle("slow", "linear");
   });
-  $("#rest-pres").hover(() => {
-    $("#rest-description").fadeToggle("slow", "linear");
-  });
   $("#project-3").hover(() => {
     $("#p3Description").fadeToggle("slow", "linear");
   });
@@ -45,6 +42,17 @@ $(document).ready(() => {
     $("#p6Description").fadeToggle("slow", "linear");
   });
 
+  ///////////////PRESENTATIONS////////////////////
+  $("#rest-pres").hover(() => {
+    $("#rest-description").fadeToggle("slow", "linear");
+  });
+  $("#restful-pres").hover(() => {
+    $("#restful-description").fadeToggle("slow", "linear");
+  });
+  $("#soap-pres").hover(() => {
+    $("#soap-description").fadeToggle("slow", "linear");
+  });
+
   //////////////////VIDEO////////////////////////
   //Video play Button
   $("#rest-description").click(() => {
@@ -55,12 +63,33 @@ $(document).ready(() => {
     $(".pres-container").addClass("darken");
     $(".video-pres").css("visibility", "visible");
   });
+  $("#restful-description").click(() => {
+    $(".pres-container").css({
+      filter: "blur(2px)",
+      "z-index": "-1",
+    });
+    $(".pres-container").addClass("darken");
+    $(".video-pres-restful").css("visibility", "visible");
+  });
+  $("#soap-description").click(() => {
+    $(".pres-container").css({
+      filter: "blur(2px)",
+      "z-index": "-1",
+    });
+    $(".pres-container").addClass("darken");
+    $(".video-pres-restful").css("visibility", "visible");
+  });
 
   $(".close-vid").click(() => {
-    if ($(".video-pres").css("visibility") === "visible") {
+    if (
+      $(".video-pres").css("visibility") === "visible" ||
+      $(".video-pres-soap").css("visibility") === "visible" ||
+      $(".video-pres-restful").css("visibility") === "visible"
+    ) {
+      console.log("hey");
       $(".pres-container").css("filter", "blur(0px)", "z-index", "1");
       $(".pres-container").removeClass("darken");
-      $(".video-pres").css("visibility", "hidden");
+      $(".video-pres, .video-pres-restful").css("visibility", "hidden");
       //Stop youtube video
       $("iframe").attr("src", $("iframe").attr("src"));
     }

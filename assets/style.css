@@ -234,6 +234,20 @@ nav li img {
   grid-gap: 20px;
 }
 
+#projects #presentations-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+#projects #presentations-wrapper .presentation-box {
+  border-radius: 20px;
+  -webkit-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+  box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+}
+
 #projects h3 {
   font-size: 40px;
   padding: 0 0 100px;
@@ -489,14 +503,56 @@ nav li img {
   margin-top: 30%;
 }
 
-.video-pres {
+#restful-pres {
+  background: url("img/rest_api.png");
+  background-color: #ECFBFF;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+#soap-pres {
+  background: url("img/soap.png");
+  background-color: #F8A320;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+#rest-description, #restful-description, #soap-description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.728);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#rest-description h2, #restful-description h2, #soap-description h2 {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#rest-description i, #restful-description i, #soap-description i {
+  font-size: 60px;
+  margin-top: 30%;
+}
+
+.video-pres, .video-pres-restful {
   visibility: hidden;
   position: absolute;
   top: 23%;
   left: 23%;
 }
 
-.video-pres .close-vid {
+.video-pres .close-vid, .video-pres-restful .close-vid {
   font-size: 40px;
 }
 

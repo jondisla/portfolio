@@ -192,6 +192,8 @@ nav {
   }
 }
 
+
+
 #projects {
   width: 1200px;
   margin: 0 auto;
@@ -200,6 +202,17 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+  }
+  #presentations-wrapper {
+    display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:30px;
+    .presentation-box{
+      border-radius: 20px;
+    -webkit-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+    box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+    }
   }
   h3 {
     font-size: 40px;
@@ -423,8 +436,45 @@ nav {
     margin-top: 30%;
   }
 }
+#restful-pres {
+  background: url("img/rest_api.png");
+  background-color: #ECFBFF;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+#soap-pres {
+  background: url("img/soap.png");
+  background-color: #F8A320;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+#rest-description, #restful-description, #soap-description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.728);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  h2 {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  i {
+    font-size: 60px;
+    margin-top: 30%;
+  }
+}
 
-.video-pres {
+.video-pres, .video-pres-restful {
   visibility: hidden;
   position: absolute;
   top: 23%;

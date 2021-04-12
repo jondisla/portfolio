@@ -192,8 +192,6 @@ nav {
   }
 }
 
-
-
 #projects {
   width: 1200px;
   margin: 0 auto;
@@ -204,14 +202,14 @@ nav {
     grid-gap: 20px;
   }
   #presentations-wrapper {
-    display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap:30px;
-    .presentation-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    .presentation-box {
       border-radius: 20px;
-    -webkit-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
-    -moz-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
-    box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+      -webkit-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+      -moz-box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
+      box-shadow: -2px 10px 9px -2px rgba(0, 0, 0, 0.21);
     }
   }
   h3 {
@@ -438,7 +436,7 @@ nav {
 }
 #restful-pres {
   background: url("img/rest_api.png");
-  background-color: #ECFBFF;
+  background-color: #ecfbff;
   background-size: contain;
   background-repeat: no-repeat;
   height: 300px;
@@ -448,7 +446,7 @@ nav {
 }
 #soap-pres {
   background: url("img/soap.png");
-  background-color: #F8A320;
+  background-color: #f8a320;
   background-size: contain;
   background-repeat: no-repeat;
   height: 300px;
@@ -456,7 +454,20 @@ nav {
   font-size: 18px;
   border-radius: 20px;
 }
-#rest-description, #restful-description, #soap-description {
+#json-pres {
+  background: url("img/jsonapi.png");
+  background-color: #e6e6e6;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+#rest-description,
+#restful-description,
+#soap-description,
+#json-description {
   display: none;
   width: 100%;
   height: 100%;
@@ -474,7 +485,10 @@ nav {
   }
 }
 
-.video-pres, .video-pres-restful, .video-pres-soap {
+.video-pres-rest,
+.video-pres-restful,
+.video-pres-soap,
+.video-pres-json {
   visibility: hidden;
   position: absolute;
   top: 23%;

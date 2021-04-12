@@ -505,7 +505,7 @@ nav li img {
 
 #restful-pres {
   background: url("img/rest_api.png");
-  background-color: #ECFBFF;
+  background-color: #ecfbff;
   background-size: contain;
   background-repeat: no-repeat;
   height: 300px;
@@ -516,7 +516,7 @@ nav li img {
 
 #soap-pres {
   background: url("img/soap.png");
-  background-color: #F8A320;
+  background-color: #f8a320;
   background-size: contain;
   background-repeat: no-repeat;
   height: 300px;
@@ -525,7 +525,21 @@ nav li img {
   border-radius: 20px;
 }
 
-#rest-description, #restful-description, #soap-description {
+#json-pres {
+  background: url("img/jsonapi.png");
+  background-color: #e6e6e6;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+#rest-description,
+#restful-description,
+#soap-description,
+#json-description {
   display: none;
   width: 100%;
   height: 100%;
@@ -535,24 +549,36 @@ nav li img {
   border-radius: 20px;
 }
 
-#rest-description h2, #restful-description h2, #soap-description h2 {
+#rest-description h2,
+#restful-description h2,
+#soap-description h2,
+#json-description h2 {
   padding: 20px 0;
   font-size: 30px;
 }
 
-#rest-description i, #restful-description i, #soap-description i {
+#rest-description i,
+#restful-description i,
+#soap-description i,
+#json-description i {
   font-size: 60px;
   margin-top: 30%;
 }
 
-.video-pres, .video-pres-restful, .video-pres-soap {
+.video-pres-rest,
+.video-pres-restful,
+.video-pres-soap,
+.video-pres-json {
   visibility: hidden;
   position: absolute;
   top: 23%;
   left: 23%;
 }
 
-.video-pres .close-vid, .video-pres-restful .close-vid, .video-pres-soap .close-vid {
+.video-pres-rest .close-vid,
+.video-pres-restful .close-vid,
+.video-pres-soap .close-vid,
+.video-pres-json .close-vid {
   font-size: 40px;
 }
 

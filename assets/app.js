@@ -52,6 +52,9 @@ $(document).ready(() => {
   $("#soap-pres").hover(() => {
     $("#soap-description").fadeToggle("slow", "linear");
   });
+  $("#json-pres").hover(() => {
+    $("#json-description").fadeToggle("slow", "linear");
+  });
 
   //////////////////VIDEO////////////////////////
   //Video play Button
@@ -62,7 +65,11 @@ $(document).ready(() => {
     });
     $(".pres-container").addClass("darken");
     $(".video-pres").css("visibility", "visible");
+    $(".video-pres-soap").css("visibility", "hidden");
+    $(".video-pres-restful").css("visibility", "hidden");
+    $(".video-pres-json").css("visibility", "hidden");
   });
+
   $("#restful-description").click(() => {
     $(".pres-container").css({
       filter: "blur(2px)",
@@ -70,7 +77,11 @@ $(document).ready(() => {
     });
     $(".pres-container").addClass("darken");
     $(".video-pres-restful").css("visibility", "visible");
+    $(".video-pres-soap").css("visibility", "hidden");
+    $(".video-pres-json").css("visibility", "hidden");
+    $(".video-pres-rest").css("visibility", "hidden");
   });
+
   $("#soap-description").click(() => {
     $(".pres-container").css({
       filter: "blur(2px)",
@@ -78,17 +89,35 @@ $(document).ready(() => {
     });
     $(".pres-container").addClass("darken");
     $(".video-pres-soap").css("visibility", "visible");
+    $(".video-pres-json").css("visibility", "hidden");
+    $(".video-pres-restful").css("visibility", "hidden");
+    $(".video-pres-rest").css("visibility", "hidden");
+  });
+
+  $("#json-description").click(() => {
+    $(".pres-container").css({
+      filter: "blur(2px)",
+      "z-index": "-1",
+    });
+    $(".pres-container").addClass("darken");
+    $(".video-pres-json").css("visibility", "visible");
+    $(".video-pres-soap").css("visibility", "hidden");
+    $(".video-pres-restful").css("visibility", "hidden");
+    $(".video-pres-rest").css("visibility", "hidden");
   });
 
   $(".close-vid").click(() => {
     if (
       $(".video-pres").css("visibility") === "visible" ||
       $(".video-pres-soap").css("visibility") === "visible" ||
+      $(".video-pres-json").css("visibility") === "visible" ||
       $(".video-pres-restful").css("visibility") === "visible"
     ) {
       $(".pres-container").css("filter", "blur(0px)", "z-index", "1");
       $(".pres-container").removeClass("darken");
-      $(".video-pres, .video-pres-restful, .video-pres-soap").css("visibility", "hidden");
+      $(
+        ".video-pres, .video-pres-restful, .video-pres-soap, .video-pres-json"
+      ).css("visibility", "hidden");
       //Stop youtube video
       $("iframe").attr("src", $("iframe").attr("src"));
     }
